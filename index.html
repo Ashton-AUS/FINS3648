@@ -12,9 +12,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -23,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">Scope</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +44,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -53,68 +60,166 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">A Warm Welcome!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+        <h1 class="display-3">Welcome to Scope</h1>
+        <p class="lead">Join over 2000 renters who have found their home with us today or list your property and find the perfect tenant for you.</p>
+        <form class="navbar-form" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" id="address" placeholder="Search suburb for your next home">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+          <div class="dropdown btn-group">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Price per week</button>
+            <ul class="dropdown-menu">
+              <li><a href="#">$0-$300</a></li>
+              <li><a href="#">$300-400</a></li>
+              <li><a href="#">$400-$500</a></li>
+              <li><a href="#">$600+</a></li>
+            </ul>
+          </div>
+          <div class="dropdown btn-group">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Arrangement</button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Roomshare</a></li>
+              <li><a href="#">Private Room</a></li>
+              <li><a href="#">Private Apartment</a></li>
+            </ul>
+          </div>
+          <div class="dropdown btn-group">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Ratings</button>
+            <ul class="dropdown-menu">
+              <li><a href="#">5 star</a></li>
+              <li><a href="#">4 star</a></li>
+              <li><a href="#">3 star</a></li>
+              <li><a href="#">2 star</a></li>
+              <li><a href="#">1 star</a></li>
+            </ul>
+          </div>
+          <div class="dropdown btn-group">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Other</button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Basic Utilities included</a></li>
+            </ul>
+          </div>
+        </form>
       </header>
 
       <!-- Page Features -->
-      <div class="row text-center">
+      <div class="row">
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card btn text-left">
+            <img class="card-img-top" src="https://images.pexels.com/photos/633563/pexels-photo-633563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+              <h4 class="card-title">Balcony views </h4>
+              <p class="card-text">
+                <span class="glyphicon glyphicon-bed"></span>
+                <b>2</b> Bedrooms <br>
+                <b>1</b> Bathroom <br>
+                <b>-</b> Carpark <br>
+                <i>Unit 12, 11 High St, Kensington</i>
+              </p>
             </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+            <!-- <div class="card-footer"> -->
+              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card btn text-left">
+            <img class="card-img-top" src="https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            <div class="card-body">
+              <h4 class="card-title">5 minutes to UNSW</h4>
+              <p class="card-text">
+                <span class="glyphicon glyphicon-bed"></span>
+                <b>3</b> Bedrooms <br>
+                <b>1</b> Bathroom <br>
+                <b>2</b> Carparks <br>
+                <i>56 Barker St, Kensington</i>
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card btn text-left">
+            <img class="card-img-top" src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
             <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+              <h4 class="card-title word-wrap">Quiet and private</h4>
+              <p class="card-text">
+                <span class="glyphicon glyphicon-bed"></span>
+                <b>1</b> Bedroom <br>
+                <b>1</b> Bathroom <br>
+                <b>-</b> Carpark <br>
+                <i>Unit 114A, 221 High St, Kensington</i>
+              </p>
             </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
+            <!-- <div class="card-footer"> -->
+              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
+            <!-- </div> -->
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-
       </div>
       <!-- /.row -->
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card btn text-left">
+            <img class="card-img-top" src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Fully furnished </h4>
+              <p class="card-text">
+                <span class="glyphicon glyphicon-bed"></span>
+                <b>1</b> Bedrooms <br>
+                <b>1</b> Bathroom <br>
+                <b>-</b> Carpark <br>
+                <i>Unit 12, 11 High St, Kensington</i>
+              </p>
+            </div>
+            <!-- <div class="card-footer"> -->
+              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card btn text-left">
+            <img class="card-img-top" src="https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Newly built</h4>
+              <p class="card-text">
+                <span class="glyphicon glyphicon-bed"></span>
+                <b>2</b> Bedrooms <br>
+                <b>2</b> Bathroom <br>
+                <b>2</b> Carparks <br>
+                <i>56 Barker St, Kensington</i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card btn text-left">
+            <img class="card-img-top" src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+            <div class="card-body">
+              <h4 class="card-title word-wrap">Beach side</h4>
+              <p class="card-text">
+                <span class="glyphicon glyphicon-bed"></span>
+                <b>1</b> Bedroom <br>
+                <b>1</b> Bathroom <br>
+                <b>-</b> Carpark <br>
+                <i>Unit 114A, 221 High St, Kensington</i>
+              </p>
+            </div>
+            <!-- <div class="card-footer"> -->
+              <!-- <a href="#" class="btn btn-primary">Find Out More!</a> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
 
     </div>
     <!-- /.container -->
@@ -122,7 +227,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Scope 2018</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -134,3 +239,6 @@
   </body>
 
 </html>
+
+
+<!--Template from: https://github.com/BlackrockDigital/startbootstrap-heroic-features-->
